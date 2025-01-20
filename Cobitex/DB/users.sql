@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2025 at 04:01 PM
+-- Generation Time: Jan 20, 2025 at 04:55 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,15 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `orders`
 --
 
-CREATE TABLE `users` (
-  `id` int(10) NOT NULL,
-  `username` varchar(12) NOT NULL,
-  `pass` varchar(12) NOT NULL,
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `curreny` varchar(12) NOT NULL,
+  `type` varchar(8) NOT NULL,
   `created_at` datetime NOT NULL,
-  `role` int(1) NOT NULL DEFAULT 0
+  `accepted` int(1) NOT NULL DEFAULT 0,
+  `accepted_at` datetime NOT NULL,
+  `sender` varchar(32) NOT NULL,
+  `receiver` varchar(32) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,9 +44,9 @@ CREATE TABLE `users` (
 --
 
 --
--- Indexes for table `users`
+-- Indexes for table `orders`
 --
-ALTER TABLE `users`
+ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -50,10 +54,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `orders`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
