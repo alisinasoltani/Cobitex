@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2025 at 04:55 PM
+-- Generation Time: Jan 23, 2025 at 10:01 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,19 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `orders` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `curreny` varchar(12) NOT NULL,
-  `type` varchar(8) NOT NULL,
+  `username` varchar(12) NOT NULL,
+  `pass` varchar(12) NOT NULL,
   `created_at` datetime NOT NULL,
-  `accepted` int(1) NOT NULL DEFAULT 0,
-  `accepted_at` datetime NOT NULL,
-  `sender` varchar(32) NOT NULL,
-  `receiver` varchar(32) DEFAULT NULL
+  `role` int(1) DEFAULT NULL,
+  `invitation_code` varchar(15) NOT NULL,
+  `invite_count` int(3) DEFAULT 0,
+  `invited_by` varchar(15) DEFAULT NULL,
+  `birthday` datetime DEFAULT NULL,
+  `national_code` varchar(10) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `email_varified` int(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -44,9 +47,9 @@ CREATE TABLE `orders` (
 --
 
 --
--- Indexes for table `orders`
+-- Indexes for table `users`
 --
-ALTER TABLE `orders`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -54,9 +57,9 @@ ALTER TABLE `orders`
 --
 
 --
--- AUTO_INCREMENT for table `orders`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `orders`
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
