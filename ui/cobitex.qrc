@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/sobi">
+        <file>cobitex</file>
+    </qresource>
+</RCC>
