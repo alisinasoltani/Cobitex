@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Cobitex</class>
- <widget class="QMainWindow" name="Cobitex">
+ <class>auth</class>
+ <widget class="QMainWindow" name="auth">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1140</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Cobitex</string>
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(27, 27, 27);</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -19,7 +22,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1140</width>
      <height>25</height>
     </rect>
    </property>
