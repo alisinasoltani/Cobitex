@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/newsobi">
+        <file>seyed</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

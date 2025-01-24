@@ -68,4 +68,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     cobitex.qrc \
+    saman.qrc \
     sobi2.qrc

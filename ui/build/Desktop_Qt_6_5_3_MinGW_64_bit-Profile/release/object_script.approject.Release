@@ -15,6 +15,7 @@ release/signuppage.o
 release/submitpage.o
 release/wallet.o
 release/qrc_cobitex.o
+release/qrc_saman.o
 release/qrc_sobi2.o
 release/moc_adminpage.o
 release/moc_afzayeshetebar.o

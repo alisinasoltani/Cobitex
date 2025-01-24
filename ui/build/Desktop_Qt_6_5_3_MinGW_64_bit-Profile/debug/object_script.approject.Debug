@@ -15,6 +15,7 @@ debug/signuppage.o
 debug/submitpage.o
 debug/wallet.o
 debug/qrc_cobitex.o
+debug/qrc_saman.o
 debug/qrc_sobi2.o
 debug/moc_adminpage.o
 debug/moc_afzayeshetebar.o

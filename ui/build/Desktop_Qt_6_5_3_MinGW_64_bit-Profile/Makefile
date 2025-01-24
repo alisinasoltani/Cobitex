@@ -363,6 +363,7 @@ Makefile: ../../approject.pro C:/Qt/6.5.3/mingw_64/mkspecs/win32-g++/qmake.conf 
 		C:/Qt/6.5.3/mingw_64/lib/Qt6EntryPoint.prl \
 		C:/Qt/6.5.3/mingw_64/mkspecs/features/build_pass.prf \
 		../../cobitex.qrc \
+		../../saman.qrc \
 		../../sobi2.qrc
 	$(QMAKE) -o Makefile ..\..\approject.pro -spec win32-g++ "CONFIG+=qml_debug" "CONFIG+=qtquickcompiler" "CONFIG+=force_debug_info" "CONFIG+=separate_debug_info"
 C:/Qt/6.5.3/mingw_64/mkspecs/features/spec_pre.prf:
@@ -658,6 +659,7 @@ C:/Qt/6.5.3/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.5.3/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.5.3/mingw_64/mkspecs/features/build_pass.prf:
 ../../cobitex.qrc:
+../../saman.qrc:
 ../../sobi2.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\approject.pro -spec win32-g++ "CONFIG+=qml_debug" "CONFIG+=qtquickcompiler" "CONFIG+=force_debug_info" "CONFIG+=separate_debug_info"
